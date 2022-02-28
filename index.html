@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banco</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <figure id="logoBanco">
+                <img src="imgs/logobanco.png" alt="logo do banco">
+            </figure>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="painelDoUser">
+            <div class="dadosDoUser">
+                <img src="imgs/perfil.png" alt="foto do user">
+                <p>
+                    Olá, <strong>@user</strong>
+                </p>
+            </div>
+
+            <div class="saldoDoUser">
+                <p>Saldo Banco
+                    <button id="botaoExtrato">Extrato</button> <strong>R$ 100,00 <button id="olho"></button></strong></p>
+            </div>
+
+            <ul id="Sessoens">
+                <li>
+                    <img src="imgs/logoqrcode.png" alt="QR code">
+                    <p>QR Code</p>
+                </li>
+                <li>
+                    <img src="imgs/logopix.webp" alt="Pix">
+                    <p>Pix</p>
+                </li>
+                <li>
+                    <img src="imgs/boleto.png" alt="Boleto">
+                    <p>Boleto</p>
+                </li>
+                <li>
+                    <img src="imgs/moedablack.png" alt="Cobrar">
+                    <p>Cobrar</p>
+                </li>
+            </ul>
+            </section>
+
+            <section id="secaoTransacao">
+            <div id="geral">
+                <div class="caixa">
+                    <p class="entrada" id="entrada1">Cartão banco</p>
+                    <div id="frenteCartao">
+                        <div id="tarjaPreta"></div>
+                        <p id="pimportante">
+                            6838 9943 2715 9398
+                        </p>
+                        <p class="pequeno">
+                            <small>
+                                VAL. THRU
+                            </small>
+                        </p>
+                        <p class="pequeno">
+                            <small>
+                                CVV
+                            </small>
+                        </p>
+                        <div id="dados">
+                            <p>
+                                30/27
+                            </p>
+                            <p>
+                                038
+                            </p>
+                        </div>
+                        <div id="bloco">
+                            <img src="imgs/mastecard.png" alt="mastecard">
+                        </div>
+                        <p id="nome">
+                            USER
+                        </p>
+                    </div>
+                </div>
+                <div id="msgPagamento">
+                    <p class="entrada">Selecione a forma de pagamento</p>
+                    <img src="imgs/logobancom.png" alt="baner do banco" class="logodobanco">
+                </div>
+                <div id="dQRcode">
+                    <img src="imgs/logoqrcode.png" alt="codigo QR" class="QRcodedestaque">
+                    <p>@user</p>
+                    <button>Cobra com QR</button>
+                </div>
+                <div id="dPixAleato" class="boxDeTansacao">
+                    <img src="imgs/copiarecolar.png" alt="copiar e colar" id="copiarecolar">
+                    <p>Insira uma chave Pix para efetuar um pagamento</p>
+                </div>
+                <div id="dBoleto">
+                    <img src="imgs/boleto.png" alt="logo boleto" class="logoboleto">
+                    <h2>
+                        Pagar com codigo de barras
+                    </h2>
+                    <p>Você pode parcelar em até 12x no cartão ou usar seu <br>saldo em carteira para pagar à vista.</p>
+                    <input type="text" placeholder="Insira o codigo de barras">
+                </div>
+                <div id="dCobrar">
+                    <img src="imgs/moeda2 (cópia).png" alt="cobrar">
+                    <h2>Cobrar</h2>
+                    <p>Divida a conta com os amigos de forma fácio</p>
+                </div>
+                <div id="dividirConta" class="boxDeTansacao">
+                    <img src="imgs/logobanco.png" alt="logoBanco" class="logodobanco">
+                    <p>Divida e acompanhe os dados de transferencia</p>
+                </div>
+            </div>
+            </section>
+        </div>
+    </main>
+    <div class="container">
+        <footer>
+            <ul>
+            <li>
+                <a href="#">
+                    <img src="imgs/home.png" alt="casinha" class="imgsrodape">
+                    <p>Inicio</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/carteira.png" alt="carteira" id="carteira">
+                    <p>carteira</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/moeda2.png" alt="Pagar">
+                    <p>Pagar</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/sino.png" alt="Notificaçao">
+                    <p>Notificaçao</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="imgs/store.png" alt="Store">
+                    <p>Store</p>
+                </a>
+            </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

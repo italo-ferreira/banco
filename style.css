@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #F3E800;
+}
+
+.container{
+    width: 100%;
+    max-width: 2000px;
+}
+
+header{
+    background-color: #2c2c2c;
+    width: 100%;
+    border-bottom: 1px solid yellow;
+}
+
+.painelDoUser{
+    background-color: #F3E800;
+    color: white;
+    padding: 40px 0 30px;
+}
+
+.dadosDoUser{
+    display: flex;
+    align-items: center;
+}
+
+.dadosDoUser > p{
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.dadosDoUser > p > strong{
+    display: block;
+    font-weight: bold;
+}
+
+.dadosDoUser > img{
+    background-color: #58bda7;
+    width: 100%;
+    max-width: 60px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.saldoDoUser{
+    border-top: 1px solid #F3E800;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.saldoDoUser > p{
+    font-size: 1.5em;
+    line-height: 20px;
+}
+
+.saldoDoUser > p > strong{
+    display: block;
+    font-weight: bold;
+}
+
+#olho{
+    background-image: url(imgs/olhofechado.png);
+    width: 30px;
+    height: 24px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#olho:hover{
+    background-color: #44bea2ce;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+#olho:active{
+    background-color: #238872;
+    background-image: url(imgs/olho.png);
+}
+
+.saldoDoUser > p > #botaoExtrato{
+    border-radius: 15px;
+    background-color: #424242;
+    color: #dfdede;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    min-width: 50px;
+    max-width: 145px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.saldoDoUser > p > #botaoExtrato:hover{
+    background-color: #2c2c2c;
+    color: #F3E800;
+    border: 1px solid #fff98d;
+}
+
+.saldoDoUser > p > #botaoExtrato:active{
+    background-color: #ffe600;
+    color: black;
+}
+
+#Sessoens{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#Sessoens > li{
+    background-color: #adf5e4c9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#Sessoens > li:hover{
+    background-color: #44bea2ce;
+    border: 1px solid #238872;
+}
+
+#Sessoens > li:active{
+    background-color: #238872;
+}
+
+#Sessoens > li > img{
+    width: 100%;
+    min-width: 30px;
+    max-width: 120px;
+}
+
+#Sessoens > li > p{
+    color: black;
+    font-weight: bold;
+}
+
+#secaoTransacao{
+    background-color: #F3E800;
+    border-bottom: 5px solid #fff30ead;
+}
+
+#geral{
+    background-color: #2c2c2c;
+    border-radius: 20px 20px 10px 10px;
+    padding: 30px 10px;
+}
+
+#geral > div > p{
+    color: white;
+}
+
+#geral > div > div > p{
+    color: white;
+}
+
+#geral > div > h2{
+    color: white;
+}
+
+.entrada{
+    font-size: 2.5em;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    padding: 30px 60px;
+    border-radius: 10px;
+    border: 1px solid #58bda7;
+    margin: 0px 7px;
+    color: white;
+    text-align: center;
+}
+
+#entrada1{
+    border: none;
+    box-shadow: none;
+}
+
+.caixa{
+    border-radius: 10px;
+    border: 1px solid #58bda7;
+    margin: 20px 7px 30px 7px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#frenteCartao{
+    background-color: #F3E800;
+    border: 3px solid #424242;
+    min-width: 200px;
+    max-width: 345px;
+    height: 195px;
+    margin: 30px 0px 30px 30px;
+    border-radius: 13px;
+    right: 50%;
+    left: 50%;
+}
+
+#tarjaPreta{
+    width: 100%;
+    height: 40px;
+    min-width: 200px;
+    max-width: 400px;
+    margin-top: 20px;
+    background-color: black;
+}
+
+#geral > .caixa > #frenteCartao > #pimportante{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#geral > .caixa > #frenteCartao > .pequeno{
+    color: black;
+    margin: 5px 0px 0px 5px;
+    font-size: 7px;
+    display: inline;
+    margin-right: 20px;
+}
+
+#geral > .caixa > #frenteCartao > #dados > p{
+    color: black;
+    font-size: 0.8em;
+    margin: 0px 18px 0px 7px;
+    display: inline;
+}
+
+#geral > .caixa > #frenteCartao > #nome{
+    color: black;
+    margin: 45px 0px 0px 10px;
+    font-weight: bold;
+    width: 50px;
+    display: flex;
+}
+
+#geral > .caixa > #frenteCartao > #bloco{
+    width: 55px;
+    height: 34px;
+    position: absolute;
+    margin: 35px 0px 0px 270px;
+}
+
+#msgPagamento > img{
+    margin: 30px 5px 90px 5px;
+    width: 98.5%;
+}
+
+#dQRcode{
+    text-align: center;
+}
+
+#dQRcode > img{
+    max-width: 180px;
+}
+
+#dQRcode > p{
+    margin: 20px 0p;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#dQRcode > button{
+    background-color: #F3E800;
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 20px 0 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#dQRcode > button:hover{
+    background-color: black;
+    color: #F3E800;
+    border: 1px solid #F3E800;
+}
+
+#dQRcode > button:active{
+    color: #2c2c2c;
+    border: 1px solid #F3E800;
+}
+
+.boxDeTansacao{
+    display: flex;
+    align-items: center;
+    border: 1px solid #58bda7;
+    max-width: 800px;
+    padding: 14px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    margin: 20px 0px;
+}
+
+.boxDeTansacao > img{
+    margin-right: 10px;
+}
+
+#dPixAleato{
+    text-align: center;
+}
+
+#dPixAleato > img{
+    max-width: 180px;
+}
+
+#dPixAleato > p{
+    margin: 20px 0px 20px 0px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#dBoleto{
+    text-align: center;
+}
+
+#dBoleto > img{
+    max-width: 180px;
+}
+
+#dBoleto > h2{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#dBoleto > p{
+    margin: 20px 0px 20px 0px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#dBoleto > input{
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    background-color: #dfdede;
+    border: 1px solid black;
+    font-size: 1.2em;
+    border-radius: 7px;
+}
+
+#dCobrar{
+    text-align: center;
+}
+
+#dCobrar > img{
+    margin-top: 20px;
+    max-width: 180px;
+}
+
+#dCobrar > h2{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#dCobrar > p{
+    margin: 20px 0px 20px 0px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#dividirConta{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+main{
+    background-color: #F3E800;
+    padding: 0 10px;
+}
+
+
+.logodobanco{
+    background-color: #F3E800;
+    border-radius: 10px;
+}
+
+#logoBanco{
+    margin: 0px;
+}
+
+#copiarecolar{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.logoboleto{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.QRcodedestaque{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+    border: 1.5px solid #F3E800;
+    background-color: #F3E800;
+    padding: 0px 10px;
+}
+
+footer > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F3E800;
+}
+
+footer > ul >li{
+    text-align: center;
+}
+
+footer > ul >li:hover{
+    transform: translateY(-30px);
+}
+
+footer > ul > li > a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+footer > ul > li > a >img{
+    width: 100%;
+    min-width: 5px;
+    max-width: 70px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+footer > .container > ul > li > a > p{
+    color: black;
+    margin-top: 7px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2,p{
+    color: black;
+}
